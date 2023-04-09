@@ -15,10 +15,13 @@
         android:theme="@style/Theme.SportzAssignment"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.MainActivity"
+            android:name=".Activities.DashBoardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

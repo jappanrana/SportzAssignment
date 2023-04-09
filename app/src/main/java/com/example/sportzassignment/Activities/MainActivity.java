@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<NotesModel> Notes;
     ArrayList<String> Nuggets;
     ArrayList<InningsModel> Innings;
+    String api;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         homeScreenTourName = findViewById(R.id.homeScreenTourName);
         homeScreenTeamButton = findViewById(R.id.homeScreenTeamButton);
 
+        api = getIntent().getStringExtra("api");
         homeScreenTeamButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -558,7 +560,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        sendRequestAsync("GET","https://demo.sportz.io/sapk01222019186652.json",listner);
+        sendRequestAsync("GET",api,listner);
     }
 
     private void UiChanges(){
