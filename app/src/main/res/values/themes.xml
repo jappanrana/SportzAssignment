@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.SportzAssignment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/color8</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -18,4 +18,5 @@
         <item name="background">@color/color3</item>
         <item name="android:background">@color/color3</item>
     </style>
+
 </resources>

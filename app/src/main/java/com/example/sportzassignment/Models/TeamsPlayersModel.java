@@ -42,7 +42,11 @@ public class TeamsPlayersModel {
     }
 
     public Boolean getIscaptain() {
-        return Iscaptain;
+
+        if(Iscaptain==null)
+            return false;
+        else
+            return Iscaptain;
     }
 
     public void setIscaptain(Boolean iscaptain) {
@@ -50,7 +54,10 @@ public class TeamsPlayersModel {
     }
 
     public Boolean getIskeeper() {
-        return Iskeeper;
+        if(Iskeeper==null)
+            return false;
+        else
+            return Iskeeper;
     }
 
     public void setIskeeper(Boolean iskeeper) {
