@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_rectangle_bg3"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/playersName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/color1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playersPosition"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/playersCaptain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="C"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintStart_toEndOf="@+id/playersName"
+        app:layout_constraintEnd_toStartOf="@+id/playersWK"
+        app:layout_constraintTop_toTopOf="@+id/playersName"
+        app:layout_constraintBottom_toBottomOf="@+id/playersName"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/playersWK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="WK"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toEndOf="@+id/playersCaptain"
+        app:layout_constraintEnd_toStartOf="@+id/playersPosition"
+        app:layout_constraintTop_toTopOf="@+id/playersName"
+        app:layout_constraintBottom_toBottomOf="@+id/playersName"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/playersPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="@color/color1"
+        app:layout_constraintStart_toEndOf="@+id/playersWK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playersName"
+        app:layout_constraintBottom_toBottomOf="@+id/playersName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
